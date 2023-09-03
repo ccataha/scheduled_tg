@@ -48,6 +48,6 @@ python telegram_bot.py
 ### Via Docker
 If you've already built the Docker image, run the container:
 ```bash
-docker run telegram_bot
+docker run -e TZ=Europe/Moscow -d telegram_bot
 ```
 Now your bot will send scheduled messages at specified times to the specified chat.
